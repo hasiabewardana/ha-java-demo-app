@@ -61,7 +61,8 @@ public class ArrayListDemo {
                     break;
 
                 case 6:
-
+                    ArrayListImpl.processArrayList();
+                    break;
 
                 case 7:
                     isRunning = true;
