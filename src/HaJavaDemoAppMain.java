@@ -1,3 +1,5 @@
+import arraylist.ArrayList;
+import arraylist.ArrayListDemo;
 import arrays.Arrays;
 import arrays.ArraysDemo;
 
@@ -6,6 +8,9 @@ public class HaJavaDemoAppMain {
         System.out.println("Welcome to HaJavaDemoApp!");
 
         // Arrays demonstration
-        ArraysDemo.handleInput();
+        // ArraysDemo.handleInput();
+
+        // Array List
+        ArrayListDemo.handleGroceryList();
     }
 }

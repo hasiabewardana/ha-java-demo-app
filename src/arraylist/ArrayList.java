@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class ArrayList {
     // Implementing a grocery list with the ArrayList
-    private static final Scanner scanner = new Scanner(System.in);
     private static final java.util.ArrayList<String> groceryList = new java.util.ArrayList<>();
 
     // Adding items to the grocery list
@@ -25,13 +24,14 @@ public class ArrayList {
     public static void searchGroceryItem(int position) {
         String searchedItem = groceryList.get(position - 1);
 
-        System.out.println(searchedItem + " is found in the grocery list.");
+        System.out.println("\n" + searchedItem + " is found in the grocery list.");
     }
 
     // Modifying a specific item in the grocery list
     public static void modifyGroceryItem(int position, String newItem) {
         String oldItem = groceryList.get(position - 1);
         groceryList.set(position - 1, newItem);
+        System.out.println("Item " + position + " has been modified in the grocery list.");
 
         printGroceryItems();
     }
@@ -39,6 +39,7 @@ public class ArrayList {
     // Removing a specific item from the grocery list
     public static void removeGroceryItem(int position){
         groceryList.remove(position - 1);
+        System.out.println("Item " + position + " has been removed from the grocery list.");
 
         printGroceryItems();
     }
