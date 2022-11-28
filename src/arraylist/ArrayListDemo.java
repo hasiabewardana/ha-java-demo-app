@@ -20,6 +20,7 @@ public class ArrayListDemo {
             System.out.println("\t6 - Exit the program.");
 
             choice = scanner.nextInt();
+            scanner.nextLine();
 
             switch (choice){
                 case 1:
@@ -33,15 +34,18 @@ public class ArrayListDemo {
                     break;
 
                 case 3:
-                    ArrayList.searchGroceryItem(1);
+                    System.out.println("\nEnter an item to search in the grocery list!");
+                    int itemToSearch = scanner.nextInt();
+                    ArrayList.searchGroceryItem(itemToSearch);
                     break;
 
                 case 4:
                     System.out.println("\nEnter the position of the item you want to modify!");
-                    int position = scanner.nextInt();
+                    int itemToModify = scanner.nextInt();
+                    scanner.nextLine();
                     System.out.println("\nEnter the new item you want to fill the above position!");
                     String newItem = scanner.nextLine();
-                    ArrayList.modifyGroceryItem(position, newItem);
+                    ArrayList.modifyGroceryItem(itemToModify, newItem);
                     break;
 
                 case 5:

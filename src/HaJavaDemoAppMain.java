@@ -10,7 +10,7 @@ public class HaJavaDemoAppMain {
         // Arrays demonstration
         // ArraysDemo.handleInput();
 
-        // Array List
+        // Array List demonstration
         ArrayListDemo.handleGroceryList();
     }
 }

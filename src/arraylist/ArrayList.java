@@ -9,6 +9,7 @@ public class ArrayList {
     // Adding items to the grocery list
     public static void addGroceryItem(String item) {
         groceryList.add(item);
+        System.out.println("You have added " + item + " to the grocery list.");
     }
 
     // Printing out the items of the grocery list
@@ -23,7 +24,6 @@ public class ArrayList {
     // Searching out a specific item in the grocery list
     public static void searchGroceryItem(int position) {
         String searchedItem = groceryList.get(position - 1);
-
         System.out.println("\n" + searchedItem + " is found in the grocery list.");
     }
 
@@ -32,7 +32,6 @@ public class ArrayList {
         String oldItem = groceryList.get(position - 1);
         groceryList.set(position - 1, newItem);
         System.out.println("Item " + position + " has been modified in the grocery list.");
-
         printGroceryItems();
     }
 
@@ -40,7 +39,6 @@ public class ArrayList {
     public static void removeGroceryItem(int position){
         groceryList.remove(position - 1);
         System.out.println("Item " + position + " has been removed from the grocery list.");
-
         printGroceryItems();
     }
 }
