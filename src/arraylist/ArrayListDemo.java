@@ -17,7 +17,8 @@ public class ArrayListDemo {
             System.out.println("\t3 - Search element of the grocery list.");
             System.out.println("\t4 - Modify element of the grocery list.");
             System.out.println("\t5 - Remove element of the grocery list.");
-            System.out.println("\t6 - Exit the program.");
+            System.out.println("\t6 - Process the ArrayList.");
+            System.out.println("\t7 - Exit the program.");
 
             choice = scanner.nextInt();
             scanner.nextLine();
@@ -26,17 +27,17 @@ public class ArrayListDemo {
                 case 1:
                     System.out.println("\nEnter an item to the grocery list!");
                     String item = scanner.nextLine();
-                    ArrayList.addGroceryItem(item);
+                    ArrayListImpl.addGroceryItem(item);
                     break;
 
                 case 2:
-                    ArrayList.printGroceryItems();
+                    ArrayListImpl.printGroceryItems();
                     break;
 
                 case 3:
                     System.out.println("\nEnter an item to search in the grocery list!");
                     String itemToSearch = scanner.nextLine();
-                    String searchedItem = ArrayList.searchGroceryItem(itemToSearch);
+                    String searchedItem = ArrayListImpl.searchGroceryItem(itemToSearch);
 
                     if(searchedItem != null) {
                         System.out.println("\n" + searchedItem + " is found in the grocery list.");
@@ -46,21 +47,23 @@ public class ArrayListDemo {
                     break;
 
                 case 4:
-                    System.out.println("\nEnter the position of the item you want to modify!");
-                    int itemToModify = scanner.nextInt();
-                    scanner.nextLine();
-                    System.out.println("\nEnter the new item you want to fill the above position!");
+                    System.out.println("\nEnter the item you want to modify!");
+                    String currentItem = scanner.nextLine();
+                    System.out.println("\nEnter the new item you want to replace!");
                     String newItem = scanner.nextLine();
-                    ArrayList.modifyGroceryItem(itemToModify, newItem);
+                    ArrayListImpl.modifyGroceryItem(currentItem, newItem);
                     break;
 
                 case 5:
-                    System.out.println("\nEnter the position of the item you want to remove!");
-                    int itemToRemove = scanner.nextInt();
-                    ArrayList.removeGroceryItem(itemToRemove);
+                    System.out.println("\nEnter the item you want to remove!");
+                    String itemToRemove = scanner.nextLine();
+                    ArrayListImpl.removeGroceryItem(itemToRemove);
                     break;
 
                 case 6:
+
+
+                case 7:
                     isRunning = true;
                     break;
             }

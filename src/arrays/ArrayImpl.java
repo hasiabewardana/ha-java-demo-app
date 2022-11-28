@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class Arrays {
+public class ArrayImpl {
     // Resizing an array
     // Accepting numbers from the console to an array
     public static void getInputData(Scanner scanner, int[] numbers){

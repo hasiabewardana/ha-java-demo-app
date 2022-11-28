@@ -9,15 +9,15 @@ public class ArraysDemo {
 
     // Handing user input
     public static void handleInput(){
-        Arrays.getInputData(scanner, numbers);
-        Arrays.printArray(numbers);
-        int[] nums = Arrays.resizeArray(scanner, numbers);
+        ArrayImpl.getInputData(scanner, numbers);
+        ArrayImpl.printArray(numbers);
+        int[] nums = ArrayImpl.resizeArray(scanner, numbers);
 
         System.out.println("\nEnter another 2 numbers to the system!");
 
         nums[10] = scanner.nextInt();
         nums[11] = scanner.nextInt();
 
-        Arrays.printArray(nums);
+        ArrayImpl.printArray(nums);
     }
 }
