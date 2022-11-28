@@ -22,9 +22,15 @@ public class ArrayList {
     }
 
     // Searching out a specific item in the grocery list
-    public static void searchGroceryItem(int position) {
-        String searchedItem = groceryList.get(position - 1);
-        System.out.println("\n" + searchedItem + " is found in the grocery list.");
+    public static String searchGroceryItem(String item) {
+        boolean exists = groceryList.contains(item);
+
+        if(exists){
+            int positionToSearch = groceryList.indexOf(item);
+            return groceryList.get(positionToSearch);
+        }
+
+        return null;
     }
 
     // Modifying a specific item in the grocery list

@@ -35,8 +35,14 @@ public class ArrayListDemo {
 
                 case 3:
                     System.out.println("\nEnter an item to search in the grocery list!");
-                    int itemToSearch = scanner.nextInt();
-                    ArrayList.searchGroceryItem(itemToSearch);
+                    String itemToSearch = scanner.nextLine();
+                    String searchedItem = ArrayList.searchGroceryItem(itemToSearch);
+
+                    if(searchedItem != null) {
+                        System.out.println("\n" + searchedItem + " is found in the grocery list.");
+                    }else{
+                        System.out.println("\n" + itemToSearch + " is not found in the grocery list.");
+                    }
                     break;
 
                 case 4:
