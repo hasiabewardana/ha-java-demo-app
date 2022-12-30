@@ -1,4 +1,5 @@
 import arraylist.ArrayListDemo;
+import generics.GenericsImpl;
 
 public class HaJavaDemoAppMain {
     public static void main(String[] args) {
@@ -8,6 +9,13 @@ public class HaJavaDemoAppMain {
         // ArraysDemo.handleInput();
 
         // Array List demonstration
-        ArrayListDemo.handleGroceryList();
+        // ArrayListDemo.handleGroceryList();
+
+        // Generics demonstration
+        // Without generics
+        // GenericsImpl.generateNumbersWithoutGenerics();
+
+        // With generics
+        GenericsImpl.generateNumbersWithGenerics();
     }
 }
