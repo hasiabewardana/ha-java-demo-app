@@ -1,6 +1,5 @@
-import arraylist.ArrayListDemo;
-import generics.GenericsDemo;
-import generics.GenericsImpl;
+import generics.printdoubled.GenericsDemo;
+import generics.sports.SportsDemo;
 
 public class HaJavaDemoAppMain {
     public static void main(String[] args) {
@@ -13,6 +12,9 @@ public class HaJavaDemoAppMain {
         // ArrayListDemo.handleGroceryList();
 
         // Generics demonstration
-        GenericsDemo.demoGenericsUsage();
+        // GenericsDemo.demoGenericsUsage();
+
+        // Generic demonstration with Sports example
+        SportsDemo.demoSports();
     }
 }

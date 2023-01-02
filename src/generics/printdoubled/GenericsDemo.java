@@ -1,4 +1,4 @@
-package generics;
+package generics.printdoubled;
 
 public class GenericsDemo {
     // Generics demonstration

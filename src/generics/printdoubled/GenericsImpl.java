@@ -1,4 +1,4 @@
-package generics;
+package generics.printdoubled;
 
 import java.util.ArrayList;
 
