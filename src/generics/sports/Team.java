@@ -2,7 +2,7 @@ package generics.sports;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team<T extends Player> {
     String name;
 
     int played = 0;
@@ -10,7 +10,7 @@ public class Team {
     int lost = 0;
     int tied = 0;
 
-    ArrayList<Player> members = new ArrayList<>();
+    ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;
@@ -24,13 +24,13 @@ public class Team {
         return members.size();
     }
 
-    public boolean addPlayer(Player player){
+    public boolean addPlayer(T player){
         if(members.contains(player)){
-            System.out.println("The player " + player.getName() + " is already on the team " + this.getName());
+            System.out.println("The player " + ((Player)player).getName() + " is already on the team " + this.getName());
             return false;
         }else {
             members.add(player);
-            System.out.println("The player " + player.getName() + " is picked by the team " + this.getName());
+            System.out.println("The player " + ((Player)player).getName() + " is picked by the team " + this.getName());
             return true;
         }
     }
