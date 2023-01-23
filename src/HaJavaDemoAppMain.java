@@ -1,3 +1,4 @@
+import exception.ExceptionDemo;
 import finalusecases.FinalDemo;
 import generics.printdoubled.GenericsDemo;
 import generics.sports.SportsDemo;
@@ -19,7 +20,9 @@ public class HaJavaDemoAppMain {
         // SportsDemo.demoSports();
 
         // final keyword demonstration
-        FinalDemo.demoFinalVariable();
+        // FinalDemo.demoFinalVariable();
 
+        // Exception demonstration
+        ExceptionDemo.exceptionDemo();
     }
 }
