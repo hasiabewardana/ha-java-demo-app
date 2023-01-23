@@ -1,7 +1,10 @@
+import equals.EqualsDemo;
 import exception.ExceptionDemo;
 import finalusecases.FinalDemo;
 import generics.printdoubled.GenericsDemo;
 import generics.sports.SportsDemo;
+import innerclass.InnerClassDemo;
+import oopconcepts.polymorphism.PolymorphismDemo;
 
 public class HaJavaDemoAppMain {
     public static void main(String[] args) {
@@ -23,6 +26,16 @@ public class HaJavaDemoAppMain {
         // FinalDemo.demoFinalVariable();
 
         // Exception demonstration
-        ExceptionDemo.exceptionDemo();
+        // ExceptionDemo.exceptionDemo();
+
+        // OOP Concepts demonstration
+        // Polymorphism
+        // PolymorphismDemo.demoPolymorphism();
+
+        // Equals method demonstration
+        // EqualsDemo.demoEquals();
+
+        // Inner class demonstration
+        InnerClassDemo.demoInnerClass();
     }
 }
