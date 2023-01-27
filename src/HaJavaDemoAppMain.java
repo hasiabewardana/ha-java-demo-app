@@ -1,10 +1,4 @@
-import equals.EqualsDemo;
-import exception.ExceptionDemo;
-import finalusecases.FinalDemo;
-import generics.printdoubled.GenericsDemo;
-import generics.sports.SportsDemo;
-import innerclass.InnerClassDemo;
-import oopconcepts.polymorphism.PolymorphismDemo;
+import mongodb.MongoDBDaoDemo;
 
 public class HaJavaDemoAppMain {
     public static void main(String[] args) {
@@ -36,6 +30,10 @@ public class HaJavaDemoAppMain {
         // EqualsDemo.demoEquals();
 
         // Inner class demonstration
-        InnerClassDemo.demoInnerClass();
+        // InnerClassDemo.demoInnerClass();
+
+        // Data access
+        // MongoDB
+        MongoDBDaoDemo.demoMongoDBAccess();
     }
 }
