@@ -1,4 +1,4 @@
-import mongodb.MongoDBDaoDemo;
+import generics.oracle.GenericsDemo;
 
 public class HaJavaDemoAppMain {
     public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class HaJavaDemoAppMain {
 
         // Generics demonstration
         // GenericsDemo.demoGenericsUsage();
+        GenericsDemo.demoGenerics();
 
         // Generic demonstration with Sports example
         // SportsDemo.demoSports();
@@ -34,6 +35,6 @@ public class HaJavaDemoAppMain {
 
         // Data access
         // MongoDB
-        MongoDBDaoDemo.demoMongoDBAccess();
+        // MongoDBDaoDemo.demoMongoDBAccess();
     }
 }

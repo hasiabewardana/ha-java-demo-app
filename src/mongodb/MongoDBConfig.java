@@ -19,7 +19,7 @@ public class MongoDBConfig {
         return mongoDBConfig;
     }
 
-    public static MongoClient getMongoDBClient(){
+    public static MongoClient getMongoDBClient() {
         // Connect to MongoDB
         MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         return mongoClient;
