@@ -1,8 +1,12 @@
-import generics.oracle.GenericsDemo;
+import first_steps.FirstSteps;
 
 public class HaJavaDemoAppMain {
     public static void main(String[] args) {
         System.out.println("Welcome to HaJavaDemoApp!");
+
+        // First Steps in Java Programming
+        FirstSteps.callFirstJavaProgram();
+        FirstSteps.getDataTypeDetails();
 
         // Arrays demonstration
         // ArraysDemo.handleInput();
@@ -12,7 +16,7 @@ public class HaJavaDemoAppMain {
 
         // Generics demonstration
         // GenericsDemo.demoGenericsUsage();
-        GenericsDemo.demoGenerics();
+        // GenericsDemo.demoGenerics();
 
         // Generic demonstration with Sports example
         // SportsDemo.demoSports();

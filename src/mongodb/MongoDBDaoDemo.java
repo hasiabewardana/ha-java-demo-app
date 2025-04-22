@@ -1,4 +1,4 @@
-package mongodb;
+/*package mongodb;
 
 public class MongoDBDaoDemo {
     public static void demoMongoDBAccess(){
@@ -17,4 +17,4 @@ public class MongoDBDaoDemo {
 
         mongoDao.deleteProduct("A pen");
     }
-}
+}*/

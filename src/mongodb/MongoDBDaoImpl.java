@@ -1,6 +1,6 @@
 package mongodb;
 
-import com.mongodb.MongoClient;
+/*import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import org.bson.Document;
@@ -65,4 +65,4 @@ public class MongoDBDaoImpl implements MongoDBDao {
         documentMongoCollection.deleteOne(new Document("name", name));
         mongoClient.close();
     }
-}
+}*/

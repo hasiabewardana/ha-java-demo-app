@@ -1,9 +1,9 @@
 package mongodb;
 
-import com.mongodb.MongoClient;
+/*import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import org.bson.Document;
+import org.bson.Document;*/
 
 public class MongoDBConfig {
     private static MongoDBConfig mongoDBConfig = null;
@@ -19,9 +19,9 @@ public class MongoDBConfig {
         return mongoDBConfig;
     }
 
-    public static MongoClient getMongoDBClient() {
+    /*public static MongoClient getMongoDBClient() {
         // Connect to MongoDB
         MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         return mongoClient;
-    }
+    }*/
 }
