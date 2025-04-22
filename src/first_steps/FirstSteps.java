@@ -104,5 +104,48 @@ public class FirstSteps {
         // Boolean
         boolean isMarried = true;
         System.out.println(isMarried);
+
+        // String
+        String myString = "I have \u00241000.";
+        System.out.println(myString);
+
+        String number1 = "10"; int number2 = 15;
+        String total = number1 + number2;
+        System.out.println(total);
+
+        double number3 = 10.5;
+        total = number1 + number3;
+        System.out.println(total);
+
+        // Operators, operands and expressions
+        char firstChar = 'A', secondChar = 'B';
+        System.out.println(firstChar + secondChar);
+        System.out.println("" + firstChar + secondChar);
+        System.out.println(firstChar - secondChar);
+        System.out.println(firstChar * secondChar);
+        System.out.println(firstChar % secondChar);
+
+        String s1 = "Hello World", s2 = "Good Morning";
+        System.out.println(s1 + s2);
+
+        // Abbreviated operators
+        int result = 10;
+        result = result + 1;
+        System.out.println(result);
+
+        result += 1;
+        System.out.println(result);
+
+        result++;
+        System.out.println(result);
+
+        result--;
+        System.out.println(result);
+
+        result *= 2;
+        System.out.println(result);
+
+        result /= 2;
+        System.out.println(result);
     }
 }
